@@ -18,17 +18,18 @@ body {
     height:0vh;
     background-color:#00BFA6;
     position:fixed;
-    right:0;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
+    bottom:calc(100vh - 85vh);
     visibility: hidden;
     transition: all 0.4s ease-in-out;
     z-index:10000;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+
 }
 
-.side-menu .close-btn {
+.side-menu .side-menu-list .close-btn {
     color : #fff;
     font-weight:500;
     font-size:2rem;
@@ -37,11 +38,12 @@ body {
     right:5%;
 }
 
-.side-menu li {
+.side-menu .side-menu-list li {
     list-style: none;
+    margin-bottom: 100px;
 }
 
-.side-menu li a {
+.side-menu .side-menu-list li a {
     text-decoration: none;
     color:#fff;
 }
@@ -242,23 +244,14 @@ header .menu-btn div:nth-child(3) {
     }
 
     main .box1 .pic2 {
-        margin: 50px auto;
+        margin: 10px auto;
         background-image: url("images/undraw_mindfulness_scgo-removebg-preview.png");
         background-position: center;
         background-size: 100%;
         background-repeat: no-repeat;
         width:300px;
         height:300px;
-        animation: animate 1s alternate infinite;
-    }
-
-    @keyframes animate {
-        0% {
-            transform: translateY(-30px);
-        }
-        100% {
-            transform: translateY(30px);
-        }
+        overflow-x: hidden;
     }
    
 }

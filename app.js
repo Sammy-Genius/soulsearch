@@ -1,5 +1,6 @@
 const menuBtn = document.querySelector(".menu-btn");
 const sideMenu = document.querySelector(".side-menu");
+const sideMenuList = document.querySelectorAll(".side-menu-list");
 const logo = document.querySelector(".logo");
 const closeBtn = document.querySelector(".close-btn");
 let tl = gsap.timeline();
@@ -14,7 +15,7 @@ menuBtn.addEventListener("click", () => {
       sideMenu.style.width = "100%";
       sideMenu.style.height = "100vh";
       sideMenu.style.borderRadius = "0px 0px 300px 0px";
-      tl.from(".side-menu li", {opacity:0, y:50, stagger:.5});
+      tl.from(".side-menu .side-menu-list li", {opacity:0, y:50, stagger:.5});
   } 
   else {
     sideMenu.style.visibility = "hidden";
