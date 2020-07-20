@@ -5,7 +5,7 @@ const logo = document.querySelector(".logo");
 const closeBtn = document.querySelector(".close-btn");
 let tl = gsap.timeline();
 
-tl.from("body", {opacity:0, duration:1, y:50, stagger:.5});
+tl.from("body", {opacity:0, duration:1, y:50, stagger:.5}, "+=.3");
 
 //open the side menu
 
@@ -27,7 +27,6 @@ menuBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
   if (sideMenu.style.visibility == "visible") {
       sideMenu.style.visibility = "hidden";
-      sideMenu.style.visibility = "visible";
       sideMenu.style.width = "0%";
       sideMenu.style.height = "0vh";
       sideMenu.style.borderRadius = "50%";
