@@ -10,7 +10,6 @@ html {
 }
 
 body {
-   /* background-color: #f0ffff;*/
     background-color: #f2f3f7;
 }
 
@@ -63,7 +62,7 @@ header .logo {
     border-radius: 5px;
     margin-left: 80px;
     box-shadow: -3px -3px 5px rgba(192,192,192,0.4),
-                    3px 3px 5px rgba(207,207,196);
+                 3px 3px 5px rgba(207,207,196);
 }
 
 header .logo a {
@@ -147,6 +146,7 @@ header .menu-btn div:nth-child(3) {
     main .box1 p {
         margin-top:30px;
         color:#11113B;
+        line-height:30px;
     }
     
     main .box1 h4 {
@@ -236,6 +236,7 @@ header .menu-btn div:nth-child(3) {
     main .box1 p {
         margin-top:50px;
         color:#11113B;
+        line-height: 30px;
     }
 
     main .box1 h4 {
