@@ -11,6 +11,7 @@ html {
 
 body {
     background-color: #f2f3f7;
+
 }
 
 .side-menu {
@@ -140,7 +141,7 @@ header .menu-btn div:nth-child(3) {
 
     main .box1 .h3-1, .box1 .h3-2 {
         color:#11113B;
-        font-size:2rem;
+        font-size:3rem;
     }
 
     main .box1 p {
@@ -154,6 +155,7 @@ header .menu-btn div:nth-child(3) {
     }
 
     main .box1 h4 a {
+        font-size:1.5rem;
         text-decoration: none;
         border:2px solid #f0ffff;
         padding: 15px 60px;
@@ -173,8 +175,8 @@ header .menu-btn div:nth-child(3) {
     }
 
     main .box2{
-        height: 300px;
-        width: 300px;
+        height: 400px;
+        width: 400px;
         grid-column: 7/8;
         margin-left:80px;
         
@@ -203,6 +205,145 @@ header .menu-btn div:nth-child(3) {
         display:none;
     }
    
+    #about {
+        margin: 120px auto;
+        height:400px;
+        width:80%;
+        display:grid;
+        grid-template-columns: repeat(10, 1fr);
+        background-color: #11113B;
+    }
+
+    #about .box3 {
+        grid-column:2/7;
+    }
+
+    #about .box3 h1 {
+        font-size:3rem;
+        color:#ffff;
+        margin-top:50px;
+    }
+
+    #about .box3 p {
+        margin-top:30px;
+        color:#ffff;
+        line-height: 30px;
+    }
+
+    #about .box4 {
+        width:400px;
+        height:400px;
+        grid-column:7/9;
+    }
+
+    #about .box4 .pic-about {
+        background-image: url("images/undraw_meditating_0nae-removebg-preview.png");
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width:100%;
+        height:100%;
+    }
+
+    #about .pic-about2-box {
+        display:none;
+    }
+
+    #contact {
+        margin: 120px auto;
+        height:400px;
+        width:80%;
+        display:grid;
+        background-color: #f2f3f7;
+        grid-template-columns: repeat(10, 1fr);
+        box-shadow: -3px -3px 5px rgba(192,192,192,0.4),
+                 3px 3px 5px rgba(207,207,196);
+    }
+
+    #contact .box5 {
+        grid-column:2/7;
+        margin-top:20px;
+    }
+
+    #contact .box5 .heading {
+        margin-bottom:30px;
+        font-size:3rem;
+    }
+
+    #contact .box5  h2 {
+        color:#11113B;
+        font-size:2rem;
+        
+    }
+
+    #contact .box6 {
+        grid-column:7/9;
+        width:300px;
+        height:300px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction: column;
+    }
+
+    #contact .box6 .input-box {
+        margin-top: 40px;
+        width:200px;
+        height:200px;
+        background-color: #11113B;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        border-radius:50%;
+    }
+
+    #contact .box6 .input-box2 {
+        width:200px;
+        height:80px;
+        background-color:#f2f3f7;
+        margin-left:70px;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        box-shadow: inset -2px -2px 8px rgba(255,255,255,1),
+                    inset -2px -2px 12px rgba(255,255,255,0.5),
+                    inset 2px 2px 4px rgba(255,255,255,0.1),
+                    inset 2px 2px 8px rgba(0,0,0,0.15);
+    }
+
+    #contact .box6 .input-box .input-box2 input[type = "text"] {
+        border:0;
+        background:none;
+        outline: none;
+        margin-left:10px;
+    }
+
+    #contact .box6 button {
+        margin-top: 50px;
+        border:0;
+        background:none;
+        outline: none;
+        padding: 15px 80px;
+        box-shadow: -2px -2px 8px rgba(255,255,255,1),
+                    -2px -2px 12px rgba(255,255,255,0.5),
+                     inset 2px 2px 4px rgba(255,255,255,0.1),
+                     2px 2px 8px rgba(0,0,0,0.15);
+        font-size: 1.5rem;
+        color:#11113B;
+        font-weight:700;
+        cursor: pointer;
+    }
+
+    #contact .box6 button:hover {
+        box-shadow: inset -2px -2px 8px rgba(255,255,255,1),
+                    inset -2px -2px 12px rgba(255,255,255,0.5),
+                    inset 2px 2px 4px rgba(255,255,255,0.1),
+                    inset 2px 2px 8px rgba(0,0,0,0.15);
+    }
+
+    #contact .box5 .email, #contact .box5 .contact-info {
+        display: none;
+    }
     
 
 }
@@ -230,7 +371,7 @@ header .menu-btn div:nth-child(3) {
 
     main .box1 .h3-1, .h3-2 {
         color:#11113B;
-        font-size:1.5rem;
+        font-size:2rem;
     }
 
     main .box1 p {
@@ -240,8 +381,9 @@ header .menu-btn div:nth-child(3) {
     }
 
     main .box1 h4 {
-        margin-top:70px;
+        margin-top:50px;
         text-align: center;
+        font-size: 1.5rem;
     }
 
     main .box1 h4 a {
@@ -249,11 +391,10 @@ header .menu-btn div:nth-child(3) {
         border:2px solid #f0ffff;
         padding: 15px 60px;
         color: #11113B;
-        box-shadow: inset -2px -2px 8px rgba(255,255,255,1),
-                    inset -2px -2px 12px rgba(255,255,255,0.5),
-                    inset 2px 2px 4px rgba(255,255,255,0.1),
-                    inset 2px 2px 8px rgba(0,0,0,0.15);
-}
+        box-shadow:  inset -2px -2px 8px rgba(255,255,255,1),
+                     inset -2px -2px 12px rgba(255,255,255,0.5),
+                     inset 2px 2px 4px rgba(255,255,255,0.1),
+                     inset 2px 2px 8px rgba(0,0,0,0.15);
     }
 
     main .box1 .pic2 {
@@ -266,7 +407,117 @@ header .menu-btn div:nth-child(3) {
         height:300px;
         overflow-x: hidden;
     }
-   
+
+    #about {
+        width: 80%;
+        height: 750px;
+        margin:80px auto;
+        background-color: #f2f3f7;
+        border-radius: 30px;
+        box-shadow: -3px -3px 5px rgba(192,192,192,0.4),
+                 3px 3px 5px rgba(207,207,196);
+    }
+
+    #about h1 {
+        text-align: center;
+        color:#11113B;
+        padding-top:30px;
+    }
+
+    #about  .pic-about2 {
+        margin: 10px auto;
+        background-image: url("images/undraw_meditating_0nae-removebg-preview.png");
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width:300px;
+        height:300px;
+        overflow-x: hidden;
+    }
+
+    #about .text-box {
+        margin:10px auto;
+        width:90%;
+        height:100%;
+    }
+
+
+    #about p {
+        line-height:30px;
+        color:#11113B;
+        text-align:center;
+    }
+
+    #contact .box5 {
+        width: 80%;
+        height: 500px;
+        margin:80px auto;
+        background-color: #f2f3f7;
+        border-radius: 30px;
+        box-shadow: -3px -3px 5px rgba(192,192,192,0.4),
+                 3px 3px 5px rgba(207,207,196);
+        display: flex; 
+        flex-direction: column;
+    }
+
+    #contact .box5 .heading {
+        margin-top:30px;
+        text-align:center;
+        font-size: 2rem;
+        color:#11113B;
+    }
+
+    #contact .box5 .contact-info  {
+        margin-top:30px;
+        width: 100%;
+        height:auto;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+    }
+
+    #contact .box5 .contact-info h2 {
+        font-size: 1.8rem;
+        color: #11113B;
+    }
+
+    #contact .box5 .email {
+        display:flex;
+        flex-direction: column;
+        width:200px;
+        height:auto;
+        margin:70px auto;
+    }
+
+    #contact .box5 .email input {
+        background:none;
+        outline:none;
+        border:0;
+        border-bottom: 2px solid #11113B;
+        color:#11113B;
+        padding: 20px  30px;
+        font-size:1.2rem;
+        
+        
+    }
+
+    #contact .box5 .email button {
+        margin-top:50px;
+        background:none;
+        outline:none;
+        border:0;
+        padding:15px 30px;
+        background-color:#D85D86;
+        color:#ffff;
+        font-size:1.5rem;
+        font-weight:700;
+    }
+
+
+    #contact .box6 input, #contact .box6 button, .box5 .h2 {
+        display:none;
+    }
+
 }
 
 /* for screens smaller than 320px */
@@ -280,5 +531,13 @@ header .menu-btn div:nth-child(3) {
 
     main .box1 .pic2 {
         width: 100%;
+    }
+
+    #about {
+        width: 90%;
+    }
+
+    #about .about-pic2 {
+        width:100%;
     }
 }
